@@ -46,7 +46,7 @@ fetch('//offline-news-api.herokuapp.com/stories')
 
 ## License
 
-All open source code released licenced under the MIT licence.  Based on [the fine work by](https://github.com/matthew-andrews/isomorphic-fetch) **[matthew-andrews](https://github.com/matthew-andrews)**.
+This code is licenced under the MIT licence.  Based on [the fine work by](https://github.com/matthew-andrews/isomorphic-fetch) **[matthew-andrews](https://github.com/matthew-andrews)**.
 
 ## Alternatives
 
