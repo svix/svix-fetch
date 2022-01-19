@@ -1,7 +1,7 @@
 {
-  "name": "isomorphic-fetch",
+  "name": "svix-fetch",
   "version": "3.0.0",
-  "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
+  "description": "An isomorphic WHATWG Fetch API, for Node & Browserify with keepalives",
   "browser": "fetch-npm-browserify.js",
   "main": "fetch-npm-node.js",
   "scripts": {
@@ -10,14 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthew-andrews/isomorphic-fetch.git"
+    "url": "https://github.com/svix/svix-fetch.git"
   },
   "author": "Matt Andrews <matt@mattandre.ws>",
+  "contributors": [
+    "Svix Inc. <support@svix.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthew-andrews/isomorphic-fetch/issues"
+    "url": "https://github.com/svix/svix-fetch/issues"
   },
-  "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
+  "homepage": "https://github.com/svix/svix-fetch/issues",
   "dependencies": {
     "node-fetch": "^2.6.1",
     "whatwg-fetch": "^3.4.1"
