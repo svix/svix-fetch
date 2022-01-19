@@ -16,19 +16,19 @@ Unless you have a specific need for this functionality we recommend using [isomo
 ### NPM
 
 ```sh
-npm install --save svix-fetch
+npm install --save @svix/svix-fetch
 ```
 
 ### Bower
 
 ```sh
-bower install --save svix-fetch
+bower install --save @svix/svix-fetch
 ```
 
 ## Usage
 
 ```js
-require('svix-fetch');
+require('@svix/svix-fetch');
 
 fetch('//offline-news-api.herokuapp.com/stories')
 	.then(function(response) {

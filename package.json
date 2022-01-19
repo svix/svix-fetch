@@ -1,5 +1,5 @@
 {
-  "name": "svix-fetch",
+  "name": "@svix/svix-fetch",
   "version": "3.0.0",
   "description": "An isomorphic WHATWG Fetch API, for Node & Browserify with keepalives",
   "browser": "fetch-npm-browserify.js",
