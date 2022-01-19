@@ -5,9 +5,7 @@
   </a>
 </h1>
 
-================
-
-svix-fetch is a fork of Matthew Andrew's wonderful WHATWG Fetch polyfill for node and bowserfy:[isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch).
+svix-fetch is a fork of Matthew Andrew's wonderful WHATWG Fetch polyfill for node and bowserfy: [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch).
 
 The main purpose of this fork is to enable keepalives when running in a node context.
 
@@ -46,7 +44,7 @@ fetch('//offline-news-api.herokuapp.com/stories')
 
 ## License
 
-This code is licenced under the MIT licence.  Based on [the fine work by](https://github.com/matthew-andrews/isomorphic-fetch) **[matthew-andrews](https://github.com/matthew-andrews)**.
+This code is licenced under the MIT licence.  Based on [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch) by **[matthew-andrews](https://github.com/matthew-andrews)**.
 
 ## Alternatives
 
