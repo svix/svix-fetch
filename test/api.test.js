@@ -12,9 +12,9 @@ function responseToText(response) {
 	return response.text();
 }
 
-describe('fetch', function() {
+describe('fetch', function () {
 
-	before(function() {
+	before(function () {
 		nock('https://mattandre.ws')
 			.get('/succeed.txt')
 			.reply(200, good);
@@ -23,24 +23,24 @@ describe('fetch', function() {
 			.reply(404, bad);
 	});
 
-	it('should be defined', function() {
+	it('should be defined', function () {
 		expect(fetch).to.be.a('function');
 	});
 
-	it('should facilitate the making of requests', function(done) {
-		fetch('//mattandre.ws/succeed.txt')
+	it('should facilitate the making of requests', function (done) {
+		fetch('https://mattandre.ws/succeed.txt')
 			.then(responseToText)
-			.then(function(data) {
+			.then(function (data) {
 				expect(data).to.equal(good);
 				done();
 			})
 			.catch(done);
 	});
 
-	it('should do the right thing with bad requests', function(done) {
-		fetch('//mattandre.ws/fail.txt')
+	it('should do the right thing with bad requests', function (done) {
+		fetch('https://mattandre.ws/fail.txt')
 			.then(responseToText)
-			.catch(function(err) {
+			.catch(function (err) {
 				expect(err.toString()).to.equal("Error: Bad server response");
 				done();
 			})
