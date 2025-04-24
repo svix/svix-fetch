@@ -11,7 +11,7 @@ const httpsAgent = new https.Agent({
 	keepAlive: true
 });
 
-const agent = function(_parsedURL) {
+const agent = function (_parsedURL) {
 	if (_parsedURL.protocol == 'http:') {
 		return httpAgent;
 	} else {
@@ -19,11 +19,11 @@ const agent = function(_parsedURL) {
 	}
 };
 
-module.exports = function(url, options) {
+module.exports = function (url, options) {
 	if (/^\/\//.test(url)) {
 		url = 'https:' + url;
 	}
-	return realFetch.call(this, url, {agent, ...options});
+	return realFetch.call(this, url, { agent, ...options });
 };
 
 if (!global.fetch) {

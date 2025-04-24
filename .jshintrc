@@ -1,5 +1,10 @@
 {
   "node": true,
   "browser": true,
-  "predef": ["describe", "it", "before"]
+  "predef": [
+    "describe",
+    "it",
+    "before"
+  ],
+  "esversion": 9
 }
